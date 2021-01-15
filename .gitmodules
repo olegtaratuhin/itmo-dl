@@ -1,0 +1,9 @@
+[submodule "models/github/fast-style-transfer"]
+	path = models/github/fast-style-transfer
+	url = https://github.com/lengstrom/fast-style-transfer.git
+[submodule "models/github/FastStyle"]
+	path = models/github/FastStyle
+	url = https://github.com/cryu854/FastStyle.git
+[submodule "models/github/PyTorch-Multi-Style-Transfer"]
+	path = models/github/PyTorch-Multi-Style-Transfer
+	url = https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer.git
