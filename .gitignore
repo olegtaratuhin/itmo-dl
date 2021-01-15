@@ -1,0 +1,14 @@
+.idea/
+.ipynb_checkpoints/
+data/
+experiments/
+
+models/AppleCreateML.playground/Resources
+models/AppleCreateML.playground/Resources
+models/AppleCreateML.playground/Resources/data/**
+
+models/CreateML.mlproj/Data\ Sources
+models/CreateML.mlproj/Checkpoints
+models/CreateML.mlproj/Snapshots
+models/CreateML.mlproj/Models
+models/CreateML.mlproj/Media
