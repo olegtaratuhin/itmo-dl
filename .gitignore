@@ -1,14 +1,21 @@
 .idea/
 .ipynb_checkpoints/
-data/
-experiments/
 
-models/AppleCreateML.playground/Resources
-models/AppleCreateML.playground/Resources
-models/AppleCreateML.playground/Resources/data/**
+models/data/content-images/**
+models/data/sample-images/**
+models/data/style-images/**
 
-models/CreateML.mlproj/Data\ Sources
-models/CreateML.mlproj/Checkpoints
-models/CreateML.mlproj/Snapshots
-models/CreateML.mlproj/Models
-models/CreateML.mlproj/Media
+models/DIY/AppleML/experiments/
+models/DIY/PyTorch/experiments/
+models/DIY/TF/experiments/
+models/DIY/Turi/experiments/
+models/DIY/Swift4TF/experiments/
+
+models/DIY/AppleML/AppleCreateML.playground/Resources
+models/DIY/AppleML/AppleCreateML.playground/Resources/data/**
+
+models/DIY/AppleML/CreateML.mlproj/Data\ Sources
+models/DIY/AppleML/CreateML.mlproj/Checkpoints
+models/DIY/AppleML/CreateML.mlproj/Snapshots
+models/DIY/AppleML/CreateML.mlproj/Models
+models/DIY/AppleML/CreateML.mlproj/Media

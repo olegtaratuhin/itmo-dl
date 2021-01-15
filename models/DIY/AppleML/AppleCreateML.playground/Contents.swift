@@ -8,8 +8,10 @@ import SwiftUI
 
 let bundle = Bundle.main
 
-let rootPath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/")
+let rootPath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/models/DIY/AppleML")
 let experimentsPath = URL(fileURLWithPath: "experiments", isDirectory: true, relativeTo: rootPath)
+
+let rootPath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/models/data")
 let dataPath = URL(fileURLWithPath: "data", isDirectory: true, relativeTo: rootPath)
 
 let stylePath = URL(fileURLWithPath: "style-images", relativeTo: dataPath)
@@ -17,7 +19,7 @@ let samplePath = URL(fileURLWithPath: "sample-images", relativeTo: dataPath)
 let contentPath = URL(fileURLWithPath: "content-images", relativeTo: dataPath)
 
 let styleImageURL = URL(
-    fileURLWithPath: "geometry_1.png",
+    fileURLWithPath: "paint_4.jpg",
     isDirectory: false,
     relativeTo: stylePath
 )
@@ -43,7 +45,7 @@ let checkpointInterval = 25
 
 // MARK: Expirements ID
 
-let experimentID = "0064"
+let experimentID = "0005"
 let sessionDirectory = URL(
     fileURLWithPath: experimentID,
     isDirectory: true,
