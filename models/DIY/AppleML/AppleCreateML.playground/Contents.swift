@@ -8,15 +8,16 @@ import SwiftUI
 
 let bundle = Bundle.main
 
-let rootPath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/models/DIY/AppleML")
-let experimentsPath = URL(fileURLWithPath: "experiments", isDirectory: true, relativeTo: rootPath)
+let codePath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/models/DIY/AppleML")
 
-let rootPath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/models/data")
+let experimentsPath = URL(fileURLWithPath: "experiments", isDirectory: true, relativeTo: codePath)
+
+let rootPath = URL(fileURLWithPath: "Users/olegtaratuhin/Code/itmo/semester3/DL/itmo-dl/models/")
 let dataPath = URL(fileURLWithPath: "data", isDirectory: true, relativeTo: rootPath)
 
 let stylePath = URL(fileURLWithPath: "style-images", relativeTo: dataPath)
 let samplePath = URL(fileURLWithPath: "sample-images", relativeTo: dataPath)
-let contentPath = URL(fileURLWithPath: "content-images", relativeTo: dataPath)
+let contentPath = URL(fileURLWithPath: "sample-images/faces", relativeTo: dataPath)
 
 let styleImageURL = URL(
     fileURLWithPath: "paint_4.jpg",
@@ -45,7 +46,7 @@ let checkpointInterval = 25
 
 // MARK: Expirements ID
 
-let experimentID = "0005"
+let experimentID = "0064"
 let sessionDirectory = URL(
     fileURLWithPath: experimentID,
     isDirectory: true,
@@ -64,14 +65,14 @@ let sessionParameters = MLTrainingSessionParameters(
 // MARK: Training parameters
 
 let maxIterations = iterations
-let textelDensity = 416
+let textelDensity = 512
 let styleStrength = 5
 
 let trainingParameters = MLStyleTransfer.ModelParameters(
     algorithm: .cnnLite,
     validation: .content(sampleImageURL),
     maxIterations: maxIterations,
-    textelDensity: 416,
+    textelDensity: 512,
     styleStrength: styleStrength
 )
 
@@ -99,7 +100,7 @@ receiveValue: { model in
 
 trainingJob.progress.publisher(for: \.fractionCompleted).sink { completed in
     _ = completed
-
+    
     guard let progress = MLProgress(progress: trainingJob.progress) else { return }
     if let styleLoss = progress.metrics[.styleLoss] { _ = styleLoss }
     if let contentLoss = progress.metrics[.contentLoss] { _ = contentLoss }

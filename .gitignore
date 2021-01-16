@@ -2,9 +2,12 @@
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
+models/github/
+
 models/data/content-images/**
 models/data/sample-images/**
 models/data/style-images/**
+models/data/content-images-lite/**
 
 models/DIY/AppleML/experiments/
 models/DIY/PyTorch/experiments/
