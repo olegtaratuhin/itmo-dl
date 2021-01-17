@@ -7,3 +7,6 @@
 [submodule "models/github/PyTorch-Multi-Style-Transfer"]
 	path = models/github/PyTorch-Multi-Style-Transfer
 	url = https://github.com/zhanghang1989/PyTorch-Multi-Style-Transfer.git
+[submodule "server/front/paintbynumbersgenerator"]
+	path = server/front/paintbynumbersgenerator
+	url = https://github.com/drake7707/paintbynumbersgenerator.git
