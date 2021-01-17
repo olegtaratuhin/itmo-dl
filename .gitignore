@@ -4,6 +4,8 @@
 
 models/github/
 
+models/trained/
+
 models/data/content-images/**
 models/data/sample-images/**
 models/data/style-images/**

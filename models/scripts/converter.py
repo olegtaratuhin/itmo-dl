@@ -11,7 +11,7 @@ from PIL import Image
 
 if __name__ == '__main__':
 
-    root_path = Path(".")
+    root_path = Path("converter_1")
 
     parser = ArgumentParser()
     parser.add_argument(
